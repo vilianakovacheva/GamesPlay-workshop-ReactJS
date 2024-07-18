@@ -1,0 +1,20 @@
+export default function GameListItem({
+    _id,
+    title,
+    category,
+    imageURL
+}) {
+    return (
+        <div className="allGames">
+            <div className="allGames-info">
+                <img src={imageURL} />
+                <h6>{category}</h6>
+                <h2>{title}</h2>
+                <a href="#" className="details-button">
+                    Details
+                </a>
+            </div>
+        </div>
+
+    );
+}
