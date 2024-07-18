@@ -8,8 +8,11 @@ export default function GameList() {
     const [games, setGames] = useState([]);
 
     useEffect(() => {
-        gamesAPI.getAll()
-            .then(result => setGames(result))
+        (async () => {
+            const result = await gamesAPI.getAll();
+
+            setGames(result);
+        })();
     }, []);
 
     return (
