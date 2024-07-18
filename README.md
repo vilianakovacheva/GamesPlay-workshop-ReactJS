@@ -21,7 +21,7 @@ SoftUni React Course Workshop
 - [x] Preseed practice server
 ## 4. Page Implementations
 - [x] Game list
-- [] Details
+- [x] Details
   - [x] Details link
   - [x] Details route
   - [x] Api function - getOne
