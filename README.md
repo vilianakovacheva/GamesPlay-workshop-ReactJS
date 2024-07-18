@@ -25,7 +25,7 @@ SoftUni React Course Workshop
   - [x] Details link
   - [x] Details route
   - [x] Api function - getOne
-- [] Home - Latest Games
+- [x] Home - Latest Games
 ## 5. Comments (Advanced)
 - [] Create service for nested resource `comments`
 - [] Post comment to server
