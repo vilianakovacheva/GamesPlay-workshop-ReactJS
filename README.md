@@ -27,8 +27,8 @@ SoftUni React Course Workshop
   - [x] Api function - getOne
 - [x] Home - Latest Games
 ## 5. Comments (Advanced)
-- [] Create service for nested resource `comments`
-- [] Post comment to server
-- [] Read comments from server
-- [] Add comments in the component
-- [] Clear form
+- [x] Create service for nested resource `comments`
+- [x] Post comment to server
+- [x] Read comments from server
+- [x] Add comments in the component
+- [x] Clear form
