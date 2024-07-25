@@ -4,12 +4,12 @@ export default function GameListItem({
     _id,
     title,
     category,
-    imageURL
+    imageUrl
 }) {
     return (
         <div className="allGames">
             <div className="allGames-info">
-                <img src={imageURL} />
+                <img src={imageUrl} />
                 <h6>{category}</h6>
                 <h2>{title}</h2>
                 <Link to={`/games/${_id}/details`} className="details-button">

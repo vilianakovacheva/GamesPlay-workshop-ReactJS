@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 export default function LatestGame({
     _id,
     title,
-    imageURL
+    imageUrl
 }) {
     return (
         <div className="game">
             <div className="image-wrap">
-                <img src={imageURL} />
+                <img src={imageUrl} />
             </div>
             <h3>{title}</h3>
             <div className="rating">

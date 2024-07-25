@@ -3,7 +3,7 @@
         "title": "Satisfactory",
         "category": "Automation",
         "maxLevel": "10",
-        "imageURL": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/capsule_616x353.jpg?t=1718088881",
+        "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/capsule_616x353.jpg?t=1718088881",
         "summary": "Satisfactory is a first-person open-world factory building game with a dash of exploration and combat. Play alone or with friends, explore an alien planet, create multi-story factories, and enter conveyor belt heaven!",
         "_id": "3d9fc6a2-6d8c-4c9f-bd9d-12399fa730be"
     },
@@ -11,7 +11,7 @@
         "title": "Eve Online",
         "category": "Space Simulator",
         "maxLevel": "11",
-        "imageURL": "https://cdn2.unrealengine.com/eve-online-1920x1080-63abdd7114f4.png",
+        "imageUrl": "https://cdn2.unrealengine.com/eve-online-1920x1080-63abdd7114f4.png",
         "summary": "EVE Vanguard is a tense, gritty, and immersive sandbox FPS set in the epic sci-fi universe of New Eden, 21,000 years in the future. Technologically immortal warclones descend to planets to explore, exploit, and conquer dangerous combat zones, mastering adaptive weaponry and overcoming emergent threats to leave their mark in the great war taking place amongst the stars.",
         "_id": "367faaaa-8fca-4756-a23d-289f9ca487b9"
     },
@@ -19,7 +19,7 @@
         "title": "World of Warcraft",
         "category": "MMO RPG",
         "maxLevel": "9",
-        "imageURL": "https://static.wikia.nocookie.net/wowpedia/images/7/7d/WoWlogo.png/revision/latest?cb=20201017225328",
+        "imageUrl": "https://static.wikia.nocookie.net/wowpedia/images/7/7d/WoWlogo.png/revision/latest?cb=20201017225328",
         "summary": "Miniature Heroes. Colossal Fun. Engage in a dazzling new sensation that's sweeping the inns and taverns across the land with this action-packed mobile strategy .",
         "_id": "3ea14910-c328-4033-b40b-7f43dd2efa22"
     }
