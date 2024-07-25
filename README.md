@@ -32,3 +32,35 @@ SoftUni React Course Workshop
 - [x] Read comments from server
 - [x] Add comments in the component
 - [x] Clear form
+## 6. API Hooks
+- [x] Form Hook
+- [] GameAPI Hooks
+- [ ] Comment Hooks
+## 7. Authentication
+- [] Auth API
+  - [] Login
+  - [] Register
+  - [ ] Logout
+- [] Auth API hook
+  - [] Login
+  - [] Register
+  - [ ] Logout
+- [] Auth state & context
+- [] Token management
+- [] Login
+- [] Register
+  - [] Add form validation
+- [ ] Logout
+- [] Authorized Requests
+## 8. UI Implementation 
+- [] Dynamic navigation
+- [] Create game
+  - [] API function
+  - [] Hook
+- [ ] Latest games
+
+## Notes
+  1. Latest Games
+     2. URL `http://localhost:3030/data/games?sortBy=_createdOn%20desc&pageSize=3`
+     3. USE URLSearchParams
+  2. seedData - line 1341 in server.js
