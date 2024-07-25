@@ -37,19 +37,19 @@ SoftUni React Course Workshop
 - [x] GameAPI Hooks
 - [ ] Comment Hooks
 ## 7. Authentication
-- [] Auth API
+- [x] Auth API
   - [x] Login
   - [] Register
   - [ ] Logout
-- [] Auth API hook
-  - [] Login
-  - [] Register
+- [x] Auth API hook
+  - [x] Login
+  - [x] Register
   - [ ] Logout
 - [x] Auth state & context
 - [x] Token management
-- [] Login
-- [] Register
-  - [] Add form validation
+- [x] Login
+- [x] Register
+  - [x] Add form validation
 - [ ] Logout
 - [] Authorized Requests
 ## 8. UI Implementation 
