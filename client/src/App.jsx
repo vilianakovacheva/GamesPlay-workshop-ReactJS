@@ -14,6 +14,9 @@ function App() {
   const [authState, setAuthState] = useState({});
 
   const changeAuthState = (state) => {
+    //TODO: Quick solution, fix by implementing persisted authState
+    localStorage.setItem('accessToken', state.accessToken);
+
     setAuthState(state);
   }
 
@@ -27,20 +30,20 @@ function App() {
 
   return (
     <AuthContext.Provider value={contextData}>
-    <div id="box">
-      <Header />
+      <div id="box">
+        <Header />
 
-      <main id="main-content">
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/games' element={<GameList />} />
-          <Route path='/games/:gameId/details' element={<GameDetails />} />
-          <Route path='/games/create' element={<GameCreate />} />
-        </Routes>
+        <main id="main-content">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/games' element={<GameList />} />
+            <Route path='/games/:gameId/details' element={<GameDetails />} />
+            <Route path='/games/create' element={<GameCreate />} />
+          </Routes>
         </main>
-    </div>
+      </div>
     </AuthContext.Provider>
   )
 }

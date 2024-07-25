@@ -4,12 +4,13 @@ import { AuthContext } from "../contexts/AuthContext";
 
 export const useLogin = () => {
     const { changeAuthState } = useContext(AuthContext);
+
     const loginHandler = async (email, password) => {
         const {password: _, ...authData} = await login(email, password);
 
         changeAuthState(authData);
 
-        return result;
+        return authData;
     }
 
     return loginHandler;
@@ -23,7 +24,7 @@ export const useRegister = () => {
 
         changeAuthState(authData);
 
-        return result;
+        return authData;
     }
 
     return registerHandler
