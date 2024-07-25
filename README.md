@@ -53,7 +53,7 @@ SoftUni React Course Workshop
 - [ ] Logout
 - [] Authorized Requests
 ## 8. UI Implementation 
-- [] Dynamic navigation
+- [x] Dynamic navigation
 - [] Create game
   - [] API function
   - [] Hook
