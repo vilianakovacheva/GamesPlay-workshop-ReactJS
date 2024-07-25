@@ -45,8 +45,8 @@ SoftUni React Course Workshop
   - [] Login
   - [] Register
   - [ ] Logout
-- [] Auth state & context
-- [] Token management
+- [x] Auth state & context
+- [x] Token management
 - [] Login
 - [] Register
   - [] Add form validation
