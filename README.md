@@ -34,11 +34,11 @@ SoftUni React Course Workshop
 - [x] Clear form
 ## 6. API Hooks
 - [x] Form Hook
-- [] GameAPI Hooks
+- [x] GameAPI Hooks
 - [ ] Comment Hooks
 ## 7. Authentication
 - [] Auth API
-  - [] Login
+  - [x] Login
   - [] Register
   - [ ] Logout
 - [] Auth API hook
