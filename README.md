@@ -51,7 +51,7 @@ SoftUni React Course Workshop
 - [x] Register
   - [x] Add form validation
 - [ ] Logout
-- [] Authorized Requests
+- [x] Authorized Requests
 ## 8. UI Implementation 
 - [x] Dynamic navigation
 - [x] Create game

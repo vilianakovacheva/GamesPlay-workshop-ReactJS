@@ -7,29 +7,11 @@ import Register from './components/register/Register'
 import GameList from './components/game-list/GameList'
 import GameCreate from './components/game-create/GameCreate'
 import GameDetails from './components/game-details/GameDetails'
-import { useState } from 'react'
-import { AuthContext } from './contexts/AuthContext'
+import { AuthContextProvider } from './contexts/AuthContext'
 
 function App() {
-  const [authState, setAuthState] = useState({});
-
-  const changeAuthState = (state) => {
-    //TODO: Quick solution, fix by implementing persisted authState
-    localStorage.setItem('accessToken', state.accessToken);
-
-    setAuthState(state);
-  }
-
-  const contextData = {
-    userId: authState._id,
-    email: authState.email,
-    accessToken: authState.accessToken,
-    isAuthenticated: !!authState.email,
-    changeAuthState
-  };
-
   return (
-    <AuthContext.Provider value={contextData}>
+    <AuthContextProvider>
       <div id="box">
         <Header />
 
@@ -44,7 +26,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </AuthContext.Provider>
+    </AuthContextProvider>
   )
 }
 
