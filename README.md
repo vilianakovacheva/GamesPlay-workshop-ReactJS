@@ -58,6 +58,9 @@ SoftUni React Course Workshop
   - [x] API function
   - [x] Hook
 - [ ] Latest games
+## 9. Refactoring
+- [x] Extract auth state from App component
+- [ ] Persist auth state
 
 ## Notes
   1. Latest Games
