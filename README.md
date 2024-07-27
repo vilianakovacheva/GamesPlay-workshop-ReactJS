@@ -35,7 +35,7 @@ SoftUni React Course Workshop
 ## 6. API Hooks
 - [x] Form Hook
 - [x] GameAPI Hooks
-- [ ] Comment Hooks
+- [x] Comment Hooks
 ## 7. Authentication
 - [x] Auth API
   - [x] Login
@@ -61,7 +61,9 @@ SoftUni React Course Workshop
 ## 9. Refactoring
 - [x] Extract auth state from App component
 - [x] Persist auth state
-- [x] Comments
+- [x] Comments 
+- [x] Refactored comments with useReducer
+- [x] Edit and delete ownership rendering
 
 ## Notes
   1. Latest Games
