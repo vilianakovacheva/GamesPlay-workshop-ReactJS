@@ -12,7 +12,7 @@ export default function GameDetails() {
     const { gameId } = useParams();
     const [comments, dispatch] = useGetAllComments(gameId);
     const createComment = useCreateComment();
-    const { email } = useAuthContext();
+    const { email, userId } = useAuthContext();
     const [game] = useGetOneGames(gameId);
     const { isAuthenticated } = useAuthContext();
 
@@ -21,11 +21,13 @@ export default function GameDetails() {
             const newComment = await createComment(gameId, comment);
 
             //setComments(oldComments => [...oldComments, newComment]);
-            dispatch({type: 'ADD_COMMENT', payload: {...newComment, author: { email }}});
+            dispatch({ type: 'ADD_COMMENT', payload: { ...newComment, author: { email } } });
         } catch (err) {
             console.log(err.message);
         }
     })
+
+    const isOwner = userId === game._ownerId;
 
     return (
         <section id="game-details">
@@ -44,25 +46,27 @@ export default function GameDetails() {
 
                     <ul>
                         {comments.map(comment => (
-                                <li key={comment._id} className="comment">
-                                    <p>{comment.author.email}: {comment.text}</p>
-                                </li>
-                            ))
-                        } 
+                            <li key={comment._id} className="comment">
+                                <p>{comment.author.email}: {comment.text}</p>
+                            </li>
+                        ))
+                        }
                     </ul>
 
-                    { comments.length === 0 && <p className="no-comment">No comments.</p>}
+                    {comments.length === 0 && <p className="no-comment">No comments.</p>}
 
                 </div>
                 {/* Edit/Delete buttons ( Only for creator of this game )  */}
-                <div className="buttons">
-                    <a href="#" className="button">
-                        Edit
-                    </a>
-                    <a href="#" className="button">
-                        Delete
-                    </a>
-                </div>
+                {isOwner && (
+                    <div className="buttons">
+                        <a href="#" className="button">
+                            Edit
+                        </a>
+                        <a href="#" className="button">
+                            Delete
+                        </a>
+                    </div>
+                )}
             </div>
             {/* Bonus */}
             {/* Add Comment ( Only for logged-in users, which is not creators of the current game ) */}
