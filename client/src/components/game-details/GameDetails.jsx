@@ -15,8 +15,14 @@ export default function GameDetails() {
     const [game] = useGetOneGames(gameId);
     const { isAuthenticated } = useAuthContext();
 
-    const { changeHandler, submitHandler, values } = useForm(initialValues, ({ comment }) => {
-        createComment(gameId, comment);
+    const { changeHandler, submitHandler, values } = useForm(initialValues, async ({ comment }) => {
+        try {
+            const newComment = await createComment(gameId, comment);
+
+            setComments(oldComments => [...oldComments, newComment]);
+        } catch (err) {
+            console.log(err.message);
+        }
     })
 
     return (
@@ -42,7 +48,7 @@ export default function GameDetails() {
                             ))
                         } 
                     </ul>
-                    
+
                     { comments.length === 0 && <p className="no-comment">No comments.</p>}
 
                 </div>
