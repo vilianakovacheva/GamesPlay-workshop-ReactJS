@@ -10,8 +10,9 @@ const initialValues = {
 
 export default function GameDetails() {
     const { gameId } = useParams();
-    const [comments, setComments] = useGetAllComments(gameId);
+    const [comments, dispatch] = useGetAllComments(gameId);
     const createComment = useCreateComment();
+    const { email } = useAuthContext();
     const [game] = useGetOneGames(gameId);
     const { isAuthenticated } = useAuthContext();
 
@@ -19,7 +20,8 @@ export default function GameDetails() {
         try {
             const newComment = await createComment(gameId, comment);
 
-            setComments(oldComments => [...oldComments, newComment]);
+            //setComments(oldComments => [...oldComments, newComment]);
+            dispatch({type: 'ADD_COMMENT', payload: {...newComment, author: { email }}});
         } catch (err) {
             console.log(err.message);
         }
