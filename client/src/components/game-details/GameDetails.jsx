@@ -33,9 +33,9 @@ export default function GameDetails() {
         const isConfirmed = confirm(`Are you sure you want to delete ${game.title} game?`);
 
         if(!isConfirmed) {
-            return;
+            return
         }
-        
+
         try {
             await gamesAPI.remove(gameId);
 
