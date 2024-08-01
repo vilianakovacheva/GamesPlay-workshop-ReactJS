@@ -9,6 +9,8 @@ import GameCreate from './components/game-create/GameCreate'
 import GameDetails from './components/game-details/GameDetails'
 import { AuthContextProvider } from './contexts/AuthContext'
 import Logout from './components/logout/Logout'
+import GameEdit from './components/game-edit/GameEdit'
+import PrivateGuard from './components/common/PrivateGuard'
 
 function App() {
   return (
@@ -24,7 +26,13 @@ function App() {
             <Route path='/logout' element={<Logout />} />
             <Route path='/games' element={<GameList />} />
             <Route path='/games/:gameId/details' element={<GameDetails />} />
-            <Route path='/games/create' element={<GameCreate />} />
+            <Route path='/games/:gameId/edit' element={<GameEdit />} />
+            
+            <Route element={<PrivateGuard />} >
+              <Route path='/games/create' element = {<GameCreate />} />
+              </Route>
+
+            {/*<Route path='/games/create' element={(<RouteGuard><GameCreate /></RouteGuard>)} />*/}
           </Routes>
         </main>
       </div>
