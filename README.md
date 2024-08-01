@@ -39,7 +39,7 @@ SoftUni React Course Workshop
 ## 7. Authentication
 - [x] Auth API
   - [x] Login
-  - [] Register
+  - [x] Register
   - [x] Logout
 - [x] Auth API hook
   - [x] Login
@@ -57,13 +57,16 @@ SoftUni React Course Workshop
 - [x] Create game
   - [x] API function
   - [x] Hook
-- [ ] Latest games
+- [x] Latest games
+- [x] Edit Game
+- [x] Delete Game
 ## 9. Refactoring
 - [x] Extract auth state from App component
 - [x] Persist auth state
 - [x] Comments 
 - [x] Refactored comments with useReducer
 - [x] Edit and delete ownership rendering
+- [x] Add route guards
 
 ## Notes
   1. Latest Games
