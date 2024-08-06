@@ -1,6 +1,7 @@
 import requester from "./requester"
 
-const BASE_URL = 'http://localhost:3030/data/comments';
+//const BASE_URL = 'http://localhost:3030/data/comments';
+const BASE_URL = `${import.meta.env.VITE_BASE_URL}/data/comments`;
 
 const create = (gameId, text) => requester.post(BASE_URL, { gameId, text });
 
