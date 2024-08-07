@@ -39,7 +39,6 @@ export default function GameDetails() {
         try {
             await gamesAPI.remove(gameId);
 
-            window.location.reload();
             navigate('/games');
         } catch (err) {
             console.log(err.message);
